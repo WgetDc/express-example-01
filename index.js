@@ -26,6 +26,6 @@ app.get("/hola", function (req, res) {
   });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.port || 3000, () => {
   console.log("El servidor está inicializado en el puerto 3000");
 });
